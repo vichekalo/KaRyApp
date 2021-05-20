@@ -27,10 +27,7 @@ app.get("/login", (req,res) => {
         if (user.username === Username && user.password === Password){
             condition = true;
         }
-        else{
-            condition = false;
-        }
-    };
+    }
     res.send(condition);
 });
 app.use(express.static('public')); 
