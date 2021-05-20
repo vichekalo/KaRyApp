@@ -1,84 +1,30 @@
 // ------------------***********************  LOGIN  **********************----------------------------------
-const { urlencoded } = require('body-parser');
-const express = require('express');
-const app = express();
+// TODO: Create a server.
+const express=require('express');
+const app=express();
+// code will work with port 5000
+app.listen(process.env.PORT || 5000,()=>console.log('server running'))
 
-app.listen(process.env.PORT || 5000, () => console.log("server runnig"))
-app.use(express.static('public'));
 app.use(express.json());
-app.use(express.urlencoded());
-
-
-let users = [{
-    username: "Vichka",
-    password: "0101"
-}, {
-    username: "nary",
-    password: "12"
-}, {
-    username: "rady",
-    password: "123"
-}];
-
-app.get('/api/users', (req, res) => res.send(users));
-
-app.post('/api/users', (req, res) => {
-    console.log(req.body);
-    if (!req.body.password) {
-
-        res.status(400)
-        return res.send({ error: "Password Required" })
-    }
-    let user = {
-        id: users.length + 1,
-        username: req.body.username,
-        password: req.body.password,
+app.use(express.urlencoded())
+//list of users and password for login.
+let users=[
+    {username:"VichVich",password:"0101"},
+    {username:"Nary ",password:"0202"},
+    {username:"Kun",password:"168"},
+];
+// app.get('/login',(req,res)=>res.send(users));
+app.get("/login",(req,res)=>{
+    // to get the username and password from the query of the request.
+    let Username=req.query.username;
+    let Password=req.query.password;
+    let condition=false;
+    // Check user and password if valid return true otherwise return false.
+    for (let user of users){
+        if (user.username===Username && user.password===Password){
+            condition=true;
+        }
     };
-    users.push(user);
-    res.send(users);
+    res.send(condition);
 });
-// --------------- delete ------------------
-app.delete('/api/users/:id', (req, res) => {
-    let id = req.params.id;
-    console.log(username, password)
-    let index = -1;
-
-    for (let user of users){
-        if (user.id === parseInt(id)){
-            index = user.id - 1;
-        }
-    }
-    if (index >= 0){
-        let user = users[index];
-        users.splice(index, 1);
-        res.send(user);
-    }else{
-        res.status(404);
-        res.send({error: " not valid user id"})
-    }
-})
-
-// ----------------------- put --------------------------------
-app.put('/api/users/:id', (req, res) => {
-    let id = req.params.id;
-    let username = req.body.username;
-    let password = req.body.password;
-    console.log(username, password)
-    let index = -1;
-
-    for (let user of users){
-        if (user.id=== parseInt(id)){
-            index = user.id - 1;
-        }
-    }
-    if (index >= 0){
-        let user = users[index];
-        user.username = username;
-        user.password = password;
-        users.splice(index, 1);
-        res.send(user);
-    }else{
-        res.status(404);
-        res.send({error: " not valid user id"})
-    }
-})
+app.use(express.static('public')); 
