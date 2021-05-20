@@ -10,8 +10,8 @@ app.use(express.urlencoded());
 
 
 let users = [{
-    username: "kaka",
-    password: "1"
+    username: "Vichka",
+    password: "0101"
 }, {
     username: "nary",
     password: "12"
