@@ -7,9 +7,11 @@ body{
     margin: auto;
     background: rgb(138, 76, 76);
     width: 60%;
+    
 }
 h1{
     margin-left: 30%;
+    margin-top: 20%;
 }
 .logIn{
     /* background: green; */
@@ -41,4 +43,5 @@ h1{
     margin-left: 25%;
     border: 1px solid;
     outline: none;
+    margin-bottom: 25px;
 }
