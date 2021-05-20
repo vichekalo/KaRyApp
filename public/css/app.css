@@ -48,7 +48,12 @@ h1{
     border-radius: 10px;
     border: 1px solid;
     outline: none;
-    background: rgb(50, 152, 185);
+    background: rgb(231, 97, 0.5);
+    
+}
+
+#login:hover, #signup:hover {
+    background: rgb(243, 166, 143);
 }
 
 
