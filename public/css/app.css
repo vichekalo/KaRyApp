@@ -1,5 +1,5 @@
 body{
-    background: pink;
+    background: rgb(124, 70, 124);
     margin: 0;
     padding: 0;
 }
@@ -8,7 +8,7 @@ body{
 .feature3{
     margin: auto;
     /* background: rgb(172, 109, 109); */
-    background: linear-gradient(rgb(150, 219, 150),rgb(245, 201, 201),rgb(174, 174, 236),rgb(144, 196, 196));
+    background: linear-gradient(rgb(150, 219, 150),rgb(247, 124, 124),rgb(127, 127, 231),rgb(49, 160, 160));
     width: 40%;
     border-radius: 40px;
     height: 75vh;

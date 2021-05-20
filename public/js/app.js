@@ -6,9 +6,9 @@ function login(e){
     axios
     .get(url)
     .then((response) => {
-        let isValid = response.data;
-        let text = "Try Again !!!"
-        let color = "red";
+        const isValid = response.data;
+        const text = "Try Again !!!"
+        const color = "red";
         if (isValid === true){
             text = "Welcome To Our APP";
             color = "green";
