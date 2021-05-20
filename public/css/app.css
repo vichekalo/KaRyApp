@@ -1,0 +1,44 @@
+body{
+    background: pink;
+    margin: 0;
+    padding: 0;
+}
+.feature3{
+    margin: auto;
+    background: rgb(138, 76, 76);
+    width: 60%;
+}
+h1{
+    margin-left: 30%;
+}
+.logIn{
+    /* background: green; */
+    width: 60%;
+    margin: auto;
+   
+}
+.logo{
+    width: 15%;
+    border-radius: 50%;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+#name{
+    height: 5vh;
+    width: 60%;
+    border: 1px solid;
+    outline: none;
+}
+#password{
+    height: 5vh;
+    width: 60%;
+    border: 1px solid;
+    outline: none;
+}
+#signIn{
+    height: 5vh;
+    width: 15%;
+    margin-left: 25%;
+    border: 1px solid;
+    outline: none;
+}
