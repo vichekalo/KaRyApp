@@ -16,10 +16,12 @@ let users = [
 ];
 // app.get('/login',(req,res)=>res.send(users));
 app.get("/login", (req,res) => {
+
     // to get the username and password from the query of the request.
     let Username = req.query.username;
     let Password = req.query.password;
     let condition = false;
+    
     // Check user and password if valid return true otherwise return false.
     for (let user of users){
         if (user.username === Username && user.password === Password){
