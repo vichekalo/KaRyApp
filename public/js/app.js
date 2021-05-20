@@ -1,5 +1,4 @@
 // const { response } = require("express");
-
 function login(e){
     e.preventDefault();
     ////
@@ -19,7 +18,7 @@ function login(e){
     });
 }
 
-//Main-------------------------------------------
+// Main-------------------------------------------
 let message = document.querySelector(".message");
 let userName = document.querySelector('#username');
 let passWord = document.querySelector('#password');
