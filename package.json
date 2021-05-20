@@ -1,0 +1,26 @@
+{
+  "name": "KaRyApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "init": "^0.1.2",
+    "nodemon": "^2.0.7",
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "nodemon sever.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vichekalo/KaRyApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vichekalo/KaRyApp/issues"
+  },
+  "homepage": "https://github.com/vichekalo/KaRyApp#readme"
+}
