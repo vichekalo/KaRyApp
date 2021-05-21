@@ -4,10 +4,6 @@ body{
     margin: 0;
     padding: 0;
 }
-.home{
-    /* background: rgb(196, 93, 93); */
-
-}
 .main{
     /* background: rgb(105, 76, 76); */
     display: grid;
@@ -134,10 +130,9 @@ h1{
 /* ///////////////////////////////// */
 #chat{
     margin: auto;
-    /* background: linear-gradient(rgb(174, 174, 236),rgb(144, 196, 196)); */
     width: 40%;
     height: 75vh;
-    background: rgb(97, 97, 161);
+    background: blue;
 }
 .head{
     display: grid;
@@ -151,7 +146,7 @@ h1{
     grid-template-columns: 50% 50%;
 }
 .logos{
-    width: 30%;
+    width: 28%;
     border-radius: 50%;
     margin-left: 5px;
     margin-top: 5px;
@@ -171,6 +166,14 @@ h1{
     margin-top: 4px;
 }
 
+/* /////////Sending////////////////// */
+.sending{
+    background: rgb(131, 103, 103);
+    margin-top: 70%;
+}
+#sticker,#camera,#enter{
+    cursor: pointer;
+}
 
 
 
