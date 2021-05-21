@@ -1,14 +1,88 @@
 body{
-    background: pink;
+    /* background: pink; */
     margin: 0;
     padding: 0;
+}
+.home{
+    /* background: rgb(196, 93, 93); */
+
+}
+.main{
+    /* background: rgb(105, 76, 76); */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10px;
+}
+.one{
+    /* background: rgb(148, 143, 143); */
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: 15px;
+    text-transform: uppercase;
+}
+ul li a{
+    text-decoration: none;
+}
+.log{
+    border-radius: 40px;
+    width: 12%;
+    background: red;
+}
+.signout{
+    border-radius: 40px;
+    width: 12%;
+    margin-left: 3%;
+}
+.two{
+    background: rgb(26, 25, 25);
+    display: flex;
+    width: 15%;
+    border-radius: 50px;
+    margin-left: 70%;
+    height: 12vh;
+}
+.amongus{
+    width: 50px;
+    height: 10vh;
+    margin-top: 7px;
+}
+.appname{
+    margin-top: 27%;
+    color: wheat;
+}
+/* ////////////////////////////////// */
+.Introduce{
+    /* background: rgb(150, 81, 81); */
+    width: 95%;
+    margin: auto;
+    margin-top: -15%;
+
+}
+.titleIntro{
+    margin-left: 40%;
+}
+.para{
+    width: 70%;
+    /* background: rgb(119, 185, 75); */
+    margin: auto;
+}
+.intro{
+    width: 88%;
+    margin: auto;
+    height: 80vh;
+    margin-left: 10%;
 }
 
 /* -----------------------LOGIN -------------------------------- */
 .feature3{
+    display: none;
     margin: auto;
     /* background: rgb(172, 109, 109); */
-    background: linear-gradient(rgb(150, 219, 150),rgb(245, 201, 201),rgb(174, 174, 236),rgb(144, 196, 196));
+    background: linear-gradient(rgb(174, 174, 236),rgb(144, 196, 196));
     width: 40%;
     border-radius: 40px;
     height: 75vh;
