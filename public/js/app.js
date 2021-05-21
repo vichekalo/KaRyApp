@@ -17,12 +17,6 @@ btnlogin.addEventListener('click',showlogin);
 
 
 
-
-
-
-
-
-
 // function login(e){
 //     e.preventDefault();
 //     ////
