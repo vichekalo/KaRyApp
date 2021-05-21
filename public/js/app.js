@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const fs= require('fs');
 
 //show when we click on login bnt
@@ -9,6 +10,23 @@ const fs= require('fs');
 // }
 // let btnlogin = document.querySelector('.log');
 // btnlogin.addEventListener('click', showlogin);
+=======
+//show when we click on login bnt
+function showlogin(){
+    let x=document.querySelector('.feature3');
+    if (window.getComputedStyle(x).display==="none"){
+        x.style.display='block'
+    }
+}
+let btnlogin=document.querySelector('.log');
+btnlogin.addEventListener('click',showlogin);
+
+
+
+
+
+
+>>>>>>> b1028f60cb9077d929b17be40ddb0c972bebb039
 
 // function login(e){
 //     e.preventDefault();
