@@ -1,4 +1,3 @@
-// const { response } = require("express");
 function login(e){
     e.preventDefault();
     ////
