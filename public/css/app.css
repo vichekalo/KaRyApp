@@ -1,5 +1,9 @@
 body{
+<<<<<<< HEAD
     /* background: pink; */
+=======
+    background: rgb(124, 70, 124);
+>>>>>>> ef15516c6f288eb2d10ad622c4c9718d0af92bdd
     margin: 0;
     padding: 0;
 }
@@ -82,7 +86,11 @@ ul li a{
     display: none;
     margin: auto;
     /* background: rgb(172, 109, 109); */
+<<<<<<< HEAD
     background: linear-gradient(rgb(174, 174, 236),rgb(144, 196, 196));
+=======
+    background: linear-gradient(rgb(150, 219, 150),rgb(247, 124, 124),rgb(127, 127, 231),rgb(49, 160, 160));
+>>>>>>> ef15516c6f288eb2d10ad622c4c9718d0af92bdd
     width: 40%;
     border-radius: 40px;
     height: 75vh;
@@ -122,7 +130,12 @@ h1{
     border-radius: 10px;
     border: 1px solid;
     outline: none;
-    background: rgb(50, 152, 185);
+    background: rgb(231, 97, 0.5);
+    
+}
+
+#login:hover, #signup:hover {
+    background: rgb(243, 166, 143);
 }
 
 
