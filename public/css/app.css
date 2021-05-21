@@ -1,4 +1,6 @@
 body{
+    /* background: pink; */
+    /* background: rgb(124, 70, 124); */
     margin: 0;
     padding: 0;
 }
@@ -53,6 +55,7 @@ ul li a{
     margin-top: 27%;
     color: wheat;
 }
+
 /* ////////////////////////////////// */
 .Introduce{
     /* background: rgb(150, 81, 81); */
@@ -80,6 +83,8 @@ ul li a{
     display: none;
     margin: auto;
     background: linear-gradient(rgb(174, 174, 236),rgb(144, 196, 196));
+    /* background: rgb(172, 109, 109);  */
+    /* background: linear-gradient(rgb(150, 219, 150),rgb(247, 124, 124),rgb(127, 127, 231),rgb(49, 160, 160));  */
     width: 40%;
     border-radius: 40px;
     height: 75vh;
