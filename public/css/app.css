@@ -1,24 +1,21 @@
 body{
-<<<<<<< HEAD
     /* background: pink; */
-=======
     background: rgb(124, 70, 124);
->>>>>>> ef15516c6f288eb2d10ad622c4c9718d0af92bdd
     margin: 0;
     padding: 0;
 }
 .home{
-    /* background: rgb(196, 93, 93); */
+    background: rgb(196, 93, 93);
 
 }
 .main{
-    /* background: rgb(105, 76, 76); */
+    background: rgb(105, 76, 76);
     display: grid;
     grid-template-columns: 50% 50%;
     margin-top: 10px;
 }
 .one{
-    /* background: rgb(148, 143, 143); */
+    background: rgb(148, 143, 143);
 }
 ul{
     display: flex;
@@ -58,6 +55,7 @@ ul li a{
     margin-top: 27%;
     color: wheat;
 }
+
 /* ////////////////////////////////// */
 .Introduce{
     /* background: rgb(150, 81, 81); */
@@ -85,12 +83,8 @@ ul li a{
 .feature3{
     display: none;
     margin: auto;
-    /* background: rgb(172, 109, 109); */
-<<<<<<< HEAD
-    background: linear-gradient(rgb(174, 174, 236),rgb(144, 196, 196));
-=======
-    background: linear-gradient(rgb(150, 219, 150),rgb(247, 124, 124),rgb(127, 127, 231),rgb(49, 160, 160));
->>>>>>> ef15516c6f288eb2d10ad622c4c9718d0af92bdd
+    background: rgb(172, 109, 109); 
+    background: linear-gradient(rgb(150, 219, 150),rgb(247, 124, 124),rgb(127, 127, 231),rgb(49, 160, 160)); 
     width: 40%;
     border-radius: 40px;
     height: 75vh;
