@@ -1,9 +1,4 @@
 body{
-<<<<<<< HEAD
-    /* background: pink; */
-=======
-    background: rgb(124, 70, 124);
->>>>>>> ef15516c6f288eb2d10ad622c4c9718d0af92bdd
     margin: 0;
     padding: 0;
 }
@@ -71,7 +66,6 @@ ul li a{
 }
 .para{
     width: 70%;
-    /* background: rgb(119, 185, 75); */
     margin: auto;
 }
 .intro{
@@ -85,12 +79,7 @@ ul li a{
 .feature3{
     display: none;
     margin: auto;
-    /* background: rgb(172, 109, 109); */
-<<<<<<< HEAD
     background: linear-gradient(rgb(174, 174, 236),rgb(144, 196, 196));
-=======
-    background: linear-gradient(rgb(150, 219, 150),rgb(247, 124, 124),rgb(127, 127, 231),rgb(49, 160, 160));
->>>>>>> ef15516c6f288eb2d10ad622c4c9718d0af92bdd
     width: 40%;
     border-radius: 40px;
     height: 75vh;
@@ -100,7 +89,6 @@ h1{
     margin-top: 20%;
 }
 .logIn{
-    /* background: green; */
     width: 70%;
     margin: auto;
 }
@@ -138,7 +126,42 @@ h1{
     background: rgb(243, 166, 143);
 }
 
-
+/* ///////////////////////////////// */
+#chat{
+    margin: auto;
+    /* background: linear-gradient(rgb(174, 174, 236),rgb(144, 196, 196)); */
+    width: 40%;
+    height: 75vh;
+    background: rgb(97, 97, 161);
+}
+.head{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: rgb(39, 180, 103);
+    height: 8vh;
+}
+.headright{
+    background: rgb(187, 180, 180);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.headleft{
+    margin-left: 50%;
+    /* margin-top: 8px; */
+}
+.logos{
+    width: 18%;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 7px;
+}
+.logouts{
+    margin-top: -30%;
+}
+.notification{
+    width: 25%;
+    margin-top: 8px;
+}
 
 
 
