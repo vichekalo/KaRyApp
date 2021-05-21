@@ -1,1 +1,7 @@
-{"users":[{"id":1,"first_name":"Adam","last_name":"Mini","favorite_color":"#ccc","username":"admin","password":"admin"},{"id":2,"first_name":"Sora","last_name":"KH","favorite_color":"#eee","username":"sorakh","password":"sorakh"}],"messages":[{"id":1,"user_id":1,"msg":"Hello World","user":{"id":1,"first_name":"Adam","last_name":"Mini","favorite_color":"#ccc","username":"admin","password":"admin"}},{"id":2,"user_id":1,"msg":"admin","user":{"id":1,"first_name":"Adam","last_name":"Mini","favorite_color":"#ccc","username":"admin","password":"admin"}},{"id":3,"user_id":2,"msg":"admin","user":{"id":2,"first_name":"Sora","last_name":"KH","favorite_color":"#eee","username":"sorakh","password":"sorakh"}},{"id":4,"user_id":2,"msg":"This is sorakh","user":{"id":2,"first_name":"Sora","last_name":"KH","favorite_color":"#eee","username":"sorakh","password":"sorakh"}}]}
+
+
+[
+    {"name":"banana","color":"yellow","price":12},
+    {"name":"apple","color":"red","price":20},
+    {"name":"mango","color":"green","price":20}
+]
