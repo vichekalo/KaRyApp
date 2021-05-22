@@ -1,0 +1,384 @@
+/* body{
+    
+    margin: 0;
+    padding: 0;
+}
+.main{
+   
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10px;
+}
+
+    
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: 15px;
+    text-transform: uppercase;
+}
+ul li a{
+    text-decoration: none;
+}
+.log{
+    border-radius: 40px;
+    width: 12%;
+    background: red;
+}
+.signout{
+    border-radius: 40px;
+    width: 12%;
+    margin-left: 3%;
+}
+.two{
+    background: rgb(26, 25, 25);
+    display: flex;
+    width: 15%;
+    border-radius: 50px;
+    margin-left: 70%;
+    height: 12vh;
+}
+.amongus{
+    width: 50px;
+    height: 10vh;
+    margin-top: 7px;
+}
+.appname{
+    margin-top: 27%;
+    color: wheat;
+} */
+
+/* ////////////////////////////////// */
+/* .Introduce{
+    
+    width: 95%;
+    margin: auto;
+    margin-top: -15%;
+
+}
+.titleIntro{
+    margin-left: 40%;
+}
+.para{
+    width: 70%;
+    margin: auto;
+}
+.intro{
+    width: 88%;
+    margin: auto;
+    height: 80vh;
+    margin-left: 10%;
+} */
+
+/* -----------------------LOGIN -------------------------------- */
+/* .feature3{
+    display: none;
+    margin: auto;
+    background: linear-gradient(rgb(174, 174, 236),rgb(144, 196, 196));
+    width: 40%;
+    border-radius: 40px;
+    height: 75vh;
+} */
+/* h1{
+    margin-left: 20%;
+    margin-top: 20%;
+}
+.logIn{
+    width: 70%;
+    margin: auto;
+}
+.logo{
+    width: 20%;
+    border-radius: 50%;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+#username{
+    height: 5vh;
+    width: 80%;
+    border: 1px solid;
+    outline: none;
+    border-radius: 10px;
+}
+#password{
+    height: 5vh;
+    width: 80%;
+    border: 1px solid;
+    outline: none;
+    border-radius: 10px;
+}
+#login,#signup{
+    height: 6vh;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid;
+    outline: none;
+    background: rgb(231, 97, 0.5);
+    
+}
+
+#login:hover, #signup:hover {
+    background: rgb(243, 166, 143);
+} */
+
+/* ///////////////////////////////// */
+/* #chat{
+    margin: auto;
+    width: 40%;
+    height: 75vh;
+    background: blue;
+}
+.head{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: rgb(39, 180, 103);
+    height: 8vh;
+}
+.headright{
+   
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.logos{
+    width: 28%;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.nameofuser{
+    margin-left: -60%;
+}
+.headleft{
+    margin-left: 60%;
+}
+.logouts{
+    
+    height: 5vh;
+}
+.notification{
+    width: 24%;
+    margin-top: 4px;
+} */
+
+/* /////////Sending////////////////// */
+/* .sending{
+    background: rgb(131, 103, 103);
+    margin-top: 70%;
+}
+#sticker,#camera,#enter{
+    cursor: pointer;
+}
+ */
+
+
+ .background-wrapper {    
+    margin: 5vh auto;
+    background-color: #ffffff;
+    width: 90vh;
+    height: 90vh;
+    flex-direction: row;  
+}
+
+.chat-main-wrapper {
+    height: 100%;
+}
+
+.chat-header{
+    width: 100%;
+    background-color:  #5352ed;
+    height: 9vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.chat-header-contact-connection-display {
+    font-family: 'Raleway';
+    font-weight: 400;
+    padding: 2px 0px;
+    font-size: 11pt;
+}
+
+.chat-header-contact-name {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 13pt;
+    padding-left: 15px;
+    color: #ffffff;
+}
+
+.chat-conversation-wrapper {
+    width: 100%;
+    height: 80.7%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    z-index: 0;
+    scroll-behavior: smooth;
+}
+
+.chat-user-message-wrapper {
+    width: 100%;
+    height: 9.3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color:#f1f2f6;
+    position: relative;
+}
+
+.chat-user-message-form-wrapper {
+    background-color: #ffffff;
+    width: 85%;
+    padding: 10px 20px;
+    border-radius: 22px;
+}
+
+#user-message-form {
+    width: 100%;
+    font-size: 13pt;
+    padding: 2px 10px;
+    outline-style: none;
+    border: none;
+    font-family: 'Raleway';
+    font-weight: 500;
+}
+
+#send-message, #attach-file,#emoji {
+    color: #a4b0be;
+    cursor: pointer;
+}
+
+#send-message {
+    padding: 0px 15px;
+}
+
+#emoji {
+    padding-left: 15px;
+    padding-right: 8px;
+}
+
+.chat-header-contact-master {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 12px 0;
+    align-items: right;
+    justify-content: flex-end;
+    max-width: 60vh;
+    margin-left: 36vh;
+}
+
+.message-box {
+    background-color: #5352ed;
+    padding: 20px 25px;
+    text-align: left;
+    max-width: 60vh;
+    border-radius: 14px 0px 14px 14px;
+}
+
+.message-box-p {
+    color: white;
+    line-height: 23px;
+    max-width: 60vh;
+    height: 100%;  
+}
+
+.contact-message-wrapper { 
+    display: flex;
+    flex-direction: row;
+    padding: 12px 0;
+    align-items: right;
+    justify-content: flex-start;
+    max-width: 60vh;
+    margin-left: 0vh;
+}
+
+.contact-message-box {
+    background-color: #37474F;
+    padding: 20px 25px;
+    text-align: left;
+    max-width: 60vh;
+    border-radius: 0px 14px 14px 14px;
+}
+
+.contact-message-box-p {
+    color: white;
+    line-height: 23px;
+    max-width: 60vh;
+    height: 100%;  
+}
+
+.emojis-wrapper {
+    width: 100%;
+    padding: 15px 10px;
+    background-color: #f1f2f6;
+    position: absolute;
+    z-index: 1;
+    bottom: 8vh;
+    display: inline-block;
+    display: none;
+}
+
+.close-emoji-wrapper {
+    width: 100%;
+    padding: 15px 10px;
+    background-color: #f1f2f6;
+    position: absolute;
+    z-index: 1;
+    bottom: 8vh;
+    display: inline-block;
+    position: absolute;
+}
+
+.emoji-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.emoji-item {
+    font-size: 16pt;
+    padding:0px 5px;
+    cursor: pointer;
+}
+
+#chat-contact-messages-options {
+    color: white;
+    cursor: pointer;
+    padding: 0px 5px;
+}
+
+.contact-message-profile {
+    margin-right: 5px;
+    padding: 15px 19px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(155, 93, 93, 0.336);
+    border-radius: 100%;
+    color: white;
+}
+
+.message-profile {
+    margin-left: 5px;
+    padding: 15px 19px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(155, 93, 93, 0.336);
+    border-radius: 100%;
+    color: white;
+}
