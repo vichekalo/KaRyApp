@@ -1,17 +1,15 @@
 const setCachedUser = data => {
-    sessionStorage.setItem("user", JSON.stringify(data));
+    localStorage.setItem("user", JSON.stringify(data));
 };
  
 const getCachedUser = () => {
-    const user = sessionStorage.getItem("user")
-        ? JSON.parse(sessionStorage.getItem("user"))
+    const user = localStorage.getItem("user")
+        ? JSON.parse(localStorage.getItem("user"))
         : null;
-
     return user
 };
 
 const resetCachedUser = () => {
-    sessionStorage.clear()
+    localStorage.clear()
 }
-  
 const cache = getCachedUser();

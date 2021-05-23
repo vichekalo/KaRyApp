@@ -214,3 +214,14 @@ body{
     border-radius: 100%;
     color: white;
 }
+.bold,.italic{
+    width: 5%;
+    background: black;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+.italic{
+    margin-left: 1.5%;
+    font-style: italic;
+}
