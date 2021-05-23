@@ -2,6 +2,30 @@ body{
     background-image: url(../../image/loginBGs.jpg);
     background-size: cover;
 }
+.header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.img-logo{
+    background: rgb(187, 135, 135);
+}
+.angkor{
+    width: 8%;
+    border-radius: 40px;
+}
+.ul{
+    background: rgb(223, 74, 74);
+
+}
+
+ul{
+    display: flex;
+    
+}
+.singins{
+    width: 10%;
+    height: 6vh;
+}
 .get-started {
     display: flex;
     flex-direction: column;
