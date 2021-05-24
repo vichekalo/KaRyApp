@@ -1,13 +1,13 @@
 
 body{
-    background-image: url(../../image/coverBG.jpg);
+    background-image: url(../../image/cover.jpg);
     background-size: cover;
 }
 .background-wrapper {    
     margin: 5vh auto;
     /* background-color: #ffffff; */
     background-size: cover;
-    background-image: url(../../image/chatBG.jpg);
+    background-image: url(../../image/chat.jpg);
     width: 90vh;
     height: 90vh;
     flex-direction: row;  
@@ -19,7 +19,7 @@ body{
 
 .chat-header{
     width: 100%;
-    background-color:  blue ;
+    background-color:  rgb(255, 0, 64) ;
     height: 9vh;
     display: flex;
     flex-direction: row;
