@@ -35,9 +35,9 @@ ul{
     padding: 30px;
     align-items: center;
     justify-content: center;
-    /* background-color:pink; */
+    background-color:rgb(252, 110, 133);
     border-radius: 40px;
-    background-image: url(../../image/bgl.jpg);
+    /* background-image: url(../../image/bgl.jpg); */
     background-size: cover;
 }
 
