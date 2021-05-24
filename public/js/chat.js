@@ -7,7 +7,7 @@ const userTxt = document.getElementById('user-message-form')
 const emojiWrapper = document.getElementById('emojis-wrapper')
 const emojiIcon = document.getElementById('emoji')
 
-const MESSAGE_URL = 'http://localhost:5000/api/v1/message'
+const MESSAGE_URL = 'api/v1/message'
 
 const chatWrapper = document.getElementById('chat-wrapper')
 
