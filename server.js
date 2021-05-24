@@ -1,6 +1,5 @@
-
 const fs = require('fs');
-const DB_PART = './public/db/db.json'
+const DB_PART = 'public/db/db.json'
 const CHAT_DB = (JSON.parse(fs.readFileSync(DB_PART)));
 const USERS = CHAT_DB.users
 const MESSAGES = CHAT_DB.messages
@@ -20,7 +19,6 @@ const writeFile = (value) => {
         if(err) throw err;
     })
 }
-
 
 // Login
 app.post('/api/v1/login', (req, res) => {
