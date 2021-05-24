@@ -1,5 +1,5 @@
 body{
-    background-image: url(../../image/loginBGs.jpg);
+    background-image: url(../../image/bg.png);
     background-size: cover;
 }
 .header{
@@ -8,6 +8,7 @@ body{
 }
 .img-logo{
     background: rgb(187, 135, 135);
+    
 }
 .angkor{
     width: 8%;
@@ -34,8 +35,10 @@ ul{
     padding: 30px;
     align-items: center;
     justify-content: center;
-    background-color:pink;
+    /* background-color:pink; */
     border-radius: 40px;
+    background-image: url(../../image/bgl.jpg);
+    background-size: cover;
 }
 
 .get-started p {
@@ -43,13 +46,13 @@ ul{
     font-weight: 700;
     display: flex;
     align-items: center;
-    color: #7e0555;
+    color: #180110;
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
 .login-p-subtitle {
-    color: #e60e9e;
+    color: #490231;
 }
   
 #login-logo {
@@ -75,7 +78,7 @@ ul{
     width: 350px;
     outline-style: none;
     border: none;
-    background-color: lightseagreen;
+    background-color: rgb(178, 32, 159);
     font-size: 'Raleway';
     font-weight: 700;
     color: white;
