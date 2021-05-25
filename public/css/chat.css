@@ -115,7 +115,7 @@ body{
 }
 
 .message-box {
-    background-color: palevioletred;
+    background-color: rgb(10, 0, 0);
     padding: 20px 25px;
     text-align: left;
     max-width: 60vh;
