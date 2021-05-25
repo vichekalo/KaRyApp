@@ -5,7 +5,6 @@ body{
 }
 .background-wrapper {    
     margin: 5vh auto;
-    /* background-color: #ffffff; */
     background-size: cover;
     background-image: url(../../image/chat.jpg);
     width: 90vh;
