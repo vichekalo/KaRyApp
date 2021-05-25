@@ -1,6 +1,1 @@
-{"users":[
-    {"username":"Vicheka","password":"kaka"},
-    {"username":"Channary","password":"Channary"},
-    {"username":"Chandy","password":"Chandy"},
-    {"username":"saranghea","password":"wuw"}
-]}
+{"users":[{"id":1,"first_name":"Vicheka","last_name":"Lo","favorite_color":"#00f","username":"Vicheka","password":"koko"},{"id":2,"first_name":"Channary","last_name":"Pha","favorite_color":"#f00","username":"Channary","password":"koko"}],"messages":[{"id":1,"user_id":1,"msg":"Hello World","user":{"id":1,"first_name":"Vicheka","last_name":"Lo","favorite_color":"#00f","username":"Vicheka","password":"koko"}},{"id":2,"user_id":1,"msg":"hi","user":{"id":1,"first_name":"Vicheka","last_name":"Lo","favorite_color":"#00f","username":"Vicheka","password":"koko"}},{"id":3,"user_id":2,"msg":"yep","user":{"id":2,"first_name":"Channary","last_name":"Pha","favorite_color":"#f00","username":"Channary","password":"koko"}},{"id":4,"user_id":1,"msg":"hehe","user":{"id":1,"first_name":"Vicheka","last_name":"Lo","favorite_color":"#00f","username":"Vicheka","password":"koko"}},{"id":5,"user_id":2,"msg":"khab"}]}
