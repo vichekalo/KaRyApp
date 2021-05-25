@@ -20,7 +20,6 @@ const getNewMsgId = () => {
     MESSAGES.forEach(item => {
         id = id < item.id ? item.id : id
     })
-
     return id + 1
 }
 

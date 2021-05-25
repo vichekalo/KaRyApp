@@ -1,4 +1,4 @@
-
+// if cache menan if user complete right both username and password will access to chat file
 if (cache) window.location.href = "/view/chat"
 
 const LOGIN_URL = "/api/v1/login"
@@ -16,15 +16,16 @@ async function login () {
         username: uname,
         password: pass
     }
-
     try {
-        const { data } = await axios.post(LOGIN_URL, payload)
-    
+        const {data} = await axios.post(LOGIN_URL, payload)
         setCachedUser(data)
         window.location.href = "/view/chat"
-    } catch (err) {
+    } 
+    catch (err) {
         alert('Incorrect username and password')
     }
 }
+
+
 
 

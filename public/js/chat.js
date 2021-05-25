@@ -31,6 +31,7 @@ messageBoxP.className = 'message-box-p'
 const profile = document.createElement('div')
 profile.className = 'message-profile'
 
+// cloneNode
 const getContactMessage = value => {
     let contactMessageWrapperClone = contactMessageWrapper.cloneNode(true)
     let contactMessageBoxClone = contactMessageBox.cloneNode(true)
@@ -146,7 +147,6 @@ function insertEmoji (emojiCode) {
     } else if (emojiCode == 10) {
         userTxt.value+= '\u{1F44E}'
     }
-
 }
 
 // key enter
