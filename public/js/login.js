@@ -1,7 +1,6 @@
 
 if (cache) window.location.href = "/view/chat"
 
-
 const LOGIN_URL = "/api/v1/login"
 
 var usernameTextfield = document.getElementById('username')
