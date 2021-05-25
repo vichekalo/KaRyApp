@@ -19,7 +19,7 @@ async function login () {
 
     try {
         const { data } = await axios.post(LOGIN_URL, payload)
-    
+
         setCachedUser(data)
         window.location.href = "/view/chat"
     } catch (err) {
