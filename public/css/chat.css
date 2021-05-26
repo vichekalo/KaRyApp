@@ -157,7 +157,7 @@ body{
 .emojis-wrapper {
     width: 100%;
     padding: 15px 10px;
-    background-color: #f1f2f6;
+    background-color: #0a0a0a;
     position: absolute;
     z-index: 1;
     bottom: 8vh;
@@ -168,7 +168,7 @@ body{
 .close-emoji-wrapper {
     width: 100%;
     padding: 15px 10px;
-    background-color: #f1f2f6;
+    background-color: #0a0a0a;
     position: absolute;
     z-index: 1;
     bottom: 8vh;
