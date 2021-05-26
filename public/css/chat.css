@@ -29,6 +29,7 @@ body{
 }
 
 .chat-header-contact-connection-display {
+    display: flex;
     font-family: 'Raleway';
     font-weight: 400;
     padding: 2px 0px;
@@ -223,4 +224,14 @@ body{
 .italic{
     margin-left: 1.5%;
     font-style: italic;
+}
+
+.online{
+    margin: 5px;
+    margin-top: 4px;
+    height: 10px;
+    width: 10px;
+    background: green;
+    border-radius: 50%;
+    
 }
