@@ -7,7 +7,7 @@ const userTxt = document.getElementById('user-message-form')
 const emojiWrapper = document.getElementById('emojis-wrapper')
 const emojiIcon = document.getElementById('emoji')
 
-const MESSAGE_URL = "/api/v1/message"
+const MESSAGE_URL = '/api/v1/message'
 
 const chatWrapper = document.getElementById('chat-wrapper')
 
@@ -31,7 +31,6 @@ messageBoxP.className = 'message-box-p'
 const profile = document.createElement('div')
 profile.className = 'message-profile'
 
-// cloneNode
 const getContactMessage = value => {
     let contactMessageWrapperClone = contactMessageWrapper.cloneNode(true)
     let contactMessageBoxClone = contactMessageBox.cloneNode(true)
@@ -87,8 +86,9 @@ async function getMessage(isScroll = true) {
         } else {
             chatElement.appendChild(getContactMessage(item))
         }
-        chatWrapper.appendChild(chatElement)
     });
+    chatWrapper.appendChild(chatElement)
+
     if (isScroll) chatWrapper.scrollTop = 9999999999
 }
 
@@ -106,7 +106,7 @@ async function sendMessage () {
             userTxt.value = ''
             await getMessage()
         } catch (error) {
-            alert('Something went wrong!!!')
+            alert('Opp, Something went wrong!!!')
         }
 
         emojiWrapper.className = 'emojis-wrapper'
@@ -147,11 +147,8 @@ function insertEmoji (emojiCode) {
     } else if (emojiCode == 10) {
         userTxt.value+= '\u{1F44E}'
     }
+
 }
-
-
-
-
 
 // key enter
 userTxt.addEventListener('keyup', function (event) {
@@ -165,15 +162,4 @@ const logout = () => {
     resetCachedUser()
     window.location.href = "/"
 }
- 
-// bold and iterlic
-document.getElementsByClassName("bold").addEventListener("click", function() {
-    let messagebold = document.querySelector("#user-message-form").value.style.fontWeight = "900";
-    userTxt += messagebold;
-
-  });
-
-document.getElementsByClassName("italic").addEventListener("click", function() {
-    let messageitalic = document.querySelector("#user-message-form").value.style.fontStyle = "italic";
-    userTxt += messageitalic;
-  });
+   

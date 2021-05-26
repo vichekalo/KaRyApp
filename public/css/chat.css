@@ -232,6 +232,9 @@ body{
     height: 10px;
     width: 10px;
     background: green;
-    border-radius: 50%;
-    
+    border-radius: 50%;  
+}
+
+.account-group-name{
+    color: white;
 }

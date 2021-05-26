@@ -40,12 +40,33 @@ ul{
     background-size: cover;
 }
 
+.get-started-regiter {
+    display: flex;
+    flex-direction: column;
+    margin: 15vh auto;
+    width: 500px;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
 .get-started p {
     font-size: 30pt;
     font-weight: 700;
     display: flex;
     align-items: center;
     color: #180110;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.get-started-regiter p {
+    font-size: 30pt;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: #2f3542;
     margin-top: 20px;
     margin-bottom: 30px;
 }

@@ -1,10 +1,13 @@
-const fs = require('fs');
-const DB_PART = 'public/db/db.json'
+
+const fs = require('fs')
+const { v4: uuidv4 } = require('uuid')
+const express = require('express')
+
+const DB_PART = './public/db/db.json'
 const CHAT_DB = (JSON.parse(fs.readFileSync(DB_PART)));
 const USERS = CHAT_DB.users
 const MESSAGES = CHAT_DB.messages
 
-const express = require('express')
 const app = express()
 const PORT = 5000
 
@@ -15,19 +18,27 @@ app.use(express.static('public'))
 
 // Get new message id
 const getNewMsgId = () => {
-    let id = MESSAGES[0].id
+    let id = MESSAGES.length > 0 ? MESSAGES[0].id : 0
 
     MESSAGES.forEach(item => {
         id = id < item.id ? item.id : id
     })
+
     return id + 1
 }
 
 // Write file db
 const writeFile = (value) => {
     fs.writeFile(DB_PART ,JSON.stringify(value), function(err) {
-        if(err) throw err;
+        if (err) throw err;
     })
+}
+
+// get generate color
+const getColor = () => {
+    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16)
+    
+    return randomColor
 }
 
 // Get all message from db
@@ -119,6 +130,48 @@ app.post('/api/v1/login', (req, res) => {
         res.send(response)
     } else {
         response.status.errorMessage = 'Inconnect username and password'
+        response.status.errorCode = 10
+        res.status(400)
+        res.send(response)
+    }
+})
+
+app.post('/api/v1/register', (req, res) => {
+    const user = {
+        id: uuidv4(),
+        first_name: req.body.firstname,
+        last_name: req.body.lastname,
+        favorite_color: getColor(),
+        username: req.body.username,
+        password: req.body.password
+    }
+
+    let response = {
+        data: null,
+        status: {
+            errorCode: 0,
+            errorMessage: ''
+        }
+    }
+
+    let index = -1
+
+    const chats = CHAT_DB
+    chats.users.push(user)
+
+    writeFile(chats)
+
+    chats.users.forEach((element, i) => {
+        if (user.id === element.id) {
+            index = i
+        }
+    });
+
+    if (index >= 0) {
+        response.data = USERS[index]
+        res.send(response)
+    } else {
+        response.status.errorMessage = 'Cannot Register for now!!!'
         response.status.errorCode = 10
         res.status(400)
         res.send(response)
