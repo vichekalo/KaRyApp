@@ -171,7 +171,7 @@ document.getElementsByClassName("bold").addEventListener("click", function() {
     // contactMessageBoxP.style.fontWeight = "900";
 //     contactMessageBoxPClone.textContent = value.style.fontWeight = "900";
 //     messageBoxPClone.innerHTML = value.style.fontWeight = "900";
-    let messagebold = document.querySelector(".message-box-p").value.style.style.fontWeight = "900";
+    let messagebold = document.querySelector("#user-message-form").value.style.fontWeight = "900";
     userTxt += messagebold;
 
   });
@@ -180,6 +180,6 @@ document.getElementsByClassName("italic").addEventListener("click", function() {
     // userTxt.style.fontStyle = "italic";
 //     contactMessageBoxPClone.textContent = value.fontStyle = "italic";
 //     messageBoxPClone.innerHTML = value.style.fontWeight = "900";
-    let messageitalic = document.querySelector(".message-box-p").value.style.fontStyle = "italic";
+    let messageitalic = document.querySelector("#user-message-form").value.style.fontStyle = "italic";
     userTxt += messageitalic;
   });
