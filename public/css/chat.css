@@ -18,7 +18,7 @@ body{
 
 .chat-header{
     width: 100%;
-    background-color:  rgb(255, 0, 64) ;
+    background-color:  rgba(97, 2, 10, 0.972) ;
     height: 9vh;
     display: flex;
     flex-direction: row;
