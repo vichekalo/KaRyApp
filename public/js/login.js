@@ -21,9 +21,11 @@ async function login () {
         password: pass
     }
 
+    // async-await if the function when we want to request data from database that acceses to network or API, we need to wait 2,3s , and the waiting isn't specific
+    // respon
     try {
+        // request data from API 
         const { data } = await axios.post(LOGIN_URL, payload)
-    
         setCachedUser(data)
         window.location.href = "/view/chat"
     } catch (err) {

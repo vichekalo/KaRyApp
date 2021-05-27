@@ -108,7 +108,6 @@ async function sendMessage () {
         } catch (error) {
             alert('Opp, Something went wrong!!!')
         }
-
         emojiWrapper.className = 'emojis-wrapper'
         emojiIcon.style.color = '#a4b0be' 
     }
@@ -162,4 +161,14 @@ const logout = () => {
     resetCachedUser()
     window.location.href = "/"
 }
-   
+
+//Bold  Italic
+
+function bold(){
+    let UserMessageForm=document.querySelector('#user-message-form').value;
+    UserMessageForm.style.fontWeight="900";
+    console.log(UserMessageForm);
+}
+let btnBold=document.querySelector('.bold');
+btnBold.addEventListener('click',bold());
+
