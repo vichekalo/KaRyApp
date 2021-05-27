@@ -9,6 +9,9 @@ const emojiIcon = document.getElementById('emoji')
 
 const MESSAGE_URL = '/api/v1/message'
 
+var isBold = false
+var isItalic = false
+
 const chatWrapper = document.getElementById('chat-wrapper')
 
 // contact message element
