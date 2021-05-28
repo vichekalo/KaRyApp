@@ -33,6 +33,10 @@ messageBoxP.className = 'message-box-p'
 const profile = document.createElement('div')
 profile.className = 'message-profile'
 
+// sound
+let getsound = document.querySelector(".myAudio")
+
+// get contact message
 const getContactMessage = value => {
     let contactMessageWrapperClone = contactMessageWrapper.cloneNode(true)
     let contactMessageBoxClone = contactMessageBox.cloneNode(true)
@@ -46,6 +50,7 @@ const getContactMessage = value => {
 
     contactProfileClone.textContent = value.user.first_name.charAt(0)
 
+    // bold and italic
     if (value.isBold && value.isItalic) {
         contactMessageBoxPClone.innerHTML = value.msg.bold().italics()
     } else if (value.isItalic) {
@@ -59,6 +64,7 @@ const getContactMessage = value => {
     return contactMessageWrapperClone
 }
 
+// get own message
 const getOwnMessage = value => {
     let messageWrapperClone = messageWrapper.cloneNode(true)
     let messageBoxClone = messageBox.cloneNode(true)
@@ -73,6 +79,7 @@ const getOwnMessage = value => {
 
     profileClone.textContent = value.user.first_name.charAt(0)
 
+    // bold and italic
     if (value.isBold && value.isItalic) {
         messageBoxPClone.innerHTML = value.msg.bold().italics()
     } else if (value.isItalic) {
@@ -91,6 +98,7 @@ setInterval(async () => {
     await getMessage(false)
 }, 1000);
 
+// get all message
 async function getMessage(isScroll = true) {
     const { data } = await axios.get(MESSAGE_URL)
 
@@ -114,13 +122,12 @@ async function getMessage(isScroll = true) {
 
 getMessage()
 
+// send message
 async function sendMessage () {
-    // sound
-    let getsound = document.querySelector(".myAudio")
-
+    // play sound
+    getsound.play();
     if (userTxt.value.trim()) {
-        // play sound
-        getsound.play();
+        
 
         const payload = {
             msg: userTxt.value,
@@ -143,6 +150,7 @@ async function sendMessage () {
     }
 }
 
+// emoji
 function emojiWindow () {
   if (emojiWrapper.className == 'emojis-wrapper'){
     emojiIcon.style.color = '#747d8c' 
@@ -214,4 +222,4 @@ function setItalicLetter () {
     }  
 }
 
-// sound
+
