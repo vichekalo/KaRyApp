@@ -187,6 +187,10 @@ function insertEmoji (emojiCode) {
         userTxt.value+= '\u{1F642}'
     }else if (emojiCode == 12) {
         userTxt.value+= '\u{1F970}'
+    }else if (emojiCode == 13) {
+        userTxt.value+= '\u{1F61B}'
+    }else if (emojiCode == 14) {
+        userTxt.value+= '\u{1F625}'
     }
 
 }
