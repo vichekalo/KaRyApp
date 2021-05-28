@@ -8,6 +8,8 @@ const emojiWrapper = document.getElementById('emojis-wrapper')
 const emojiIcon = document.getElementById('emoji')
 
 const MESSAGE_URL = '/api/v1/message'
+var isBold = false
+var isItalic = false
 
 const chatWrapper = document.getElementById('chat-wrapper')
 
@@ -43,7 +45,16 @@ const getContactMessage = value => {
     contactMessageBoxClone.appendChild(contactMessageBoxPClone)
 
     contactProfileClone.textContent = value.user.first_name.charAt(0)
-    contactMessageBoxPClone.textContent = value.msg
+
+    if (value.isBold && value.isItalic) {
+        contactMessageBoxPClone.innerHTML = value.msg.bold().italics()
+    } else if (value.isItalic) {
+        contactMessageBoxPClone.innerHTML = value.msg.italics()
+    } else if (value.isBold) {
+        contactMessageBoxPClone.innerHTML = value.msg.bold()
+    } else {
+        contactMessageBoxPClone.innerHTML = value.msg
+    }
 
     return contactMessageWrapperClone
 }
@@ -61,7 +72,16 @@ const getOwnMessage = value => {
     chatWrapper.appendChild(messageWrapperClone)
 
     profileClone.textContent = value.user.first_name.charAt(0)
-    messageBoxPClone.innerHTML = value.msg
+
+    if (value.isBold && value.isItalic) {
+        messageBoxPClone.innerHTML = value.msg.bold().italics()
+    } else if (value.isItalic) {
+        messageBoxPClone.innerHTML = value.msg.italics()
+    } else if (value.isBold) {
+        messageBoxPClone.innerHTML = value.msg.bold()
+    } else {
+        messageBoxPClone.innerHTML = value.msg
+    }
 
     return messageWrapperClone
 }
@@ -98,12 +118,16 @@ async function sendMessage () {
     if (userTxt.value.trim()) {
         const payload = {
             msg: userTxt.value,
-            user_id: cache.data.id
+            user_id: cache.data.id,
+            isBold: isBold,
+            isItalic: isItalic
         }
 
         try {
             await axios.post(MESSAGE_URL, payload)
             userTxt.value = ''
+            isBold = false
+            isItalic = false
             await getMessage()
         } catch (error) {
             alert('Opp, Something went wrong!!!')
@@ -164,11 +188,19 @@ const logout = () => {
 
 //Bold  Italic
 
-function bold(){
-    let UserMessageForm=document.querySelector('#user-message-form').value;
-    UserMessageForm.style.fontWeight="900";
-    console.log(UserMessageForm);
+function bold () {
+    if (isBold) {
+        isBold = false
+    } else {
+        isBold = true
+    } 
 }
-let btnBold=document.querySelector('.bold');
-btnBold.addEventListener('click',bold());
+
+function setItalicLetter () {
+    if (isItalic) {
+        isItalic = false
+    } else {
+        isItalic = true
+    }  
+}
 
