@@ -1,5 +1,5 @@
 
-if (!cache) window.location.href = "/"
+if (!cache) window.location.href = "/" 
 
 document.getElementById('account-name').innerHTML = cache.data.first_name + ' ' + cache.data.last_name
 
