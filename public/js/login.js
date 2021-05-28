@@ -60,4 +60,3 @@ async function register () {
         alert('Opp, Something went wrong!!!')
     }
 }
-

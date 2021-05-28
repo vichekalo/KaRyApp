@@ -115,10 +115,13 @@ async function getMessage(isScroll = true) {
 getMessage()
 
 async function sendMessage () {
-    // let getsond = document.querySelector(".myAudio")
+    // sound
+    let getsound = document.querySelector(".myAudio")
 
     if (userTxt.value.trim()) {
-        // getsond.play();
+        // play sound
+        getsound.play();
+
         const payload = {
             msg: userTxt.value,
             user_id: cache.data.id,
