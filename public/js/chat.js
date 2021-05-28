@@ -115,7 +115,10 @@ async function getMessage(isScroll = true) {
 getMessage()
 
 async function sendMessage () {
+    // let getsond = document.querySelector(".myAudio")
+
     if (userTxt.value.trim()) {
+        // getsond.play();
         const payload = {
             msg: userTxt.value,
             user_id: cache.data.id,
@@ -169,6 +172,10 @@ function insertEmoji (emojiCode) {
         userTxt.value+= '\u{1F44D}'
     } else if (emojiCode == 10) {
         userTxt.value+= '\u{1F44E}'
+    } else if (emojiCode == 11) {
+        userTxt.value+= '\u{1F642}'
+    }else if (emojiCode == 12) {
+        userTxt.value+= '\u{1F970}'
     }
 
 }
@@ -204,3 +211,4 @@ function setItalicLetter () {
     }  
 }
 
+// sound

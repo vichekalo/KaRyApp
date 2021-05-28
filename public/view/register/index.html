@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Alerm</title>
+    <title>LoveAlarm</title>
+    <link rel="shortcut icon" href="../../image/logo.png" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="./image/loginBG.jpg">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/login.css">
 </head>
-
 <body>
-    <div class="get-started" id="login-screen">
-       <p> Love<span class="login-p-subtitle">Alarm</span></p>
-        <input type="text" name="username" id="username" placeholder="Username" class="login-form">
-        <input type="password" name="password" id="password" class="login-form" placeholder="Password">
-        <input type="button" value="Login" class="login-btn" onclick="login()">
-        <span>Don't have an account yet? <a href="/view/register">Register</a></span>
-    </div>
     
+    <div class="get-started-regiter" id="register-screen">
+        <p>         
+            Love <span class="login-p-subtitle">Alarm</span>  
+        </p>
+    
+        <input type="text" name="firstname" id="firstname" placeholder="First Name" class="login-form">
+        <input type="text" name="lastname" id="lastname" class="login-form" placeholder="Last Name">
+        <input type="text" name="username" id="username" placeholder="Username" class="login-form">
+        <input type="password" name="password" id="password" class="login-form" placeholder="New Password">
+        <input type="password" name="confirmPassword" id="confirmPassword" class="login-form" placeholder="Confirm Password">
+        <input type="button" value="Register" class="login-btn" onclick="register()">
+
+        <span>Already have an account? <a href="/">Login</a></span>
+     </div>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="./utils/cache-util.js"></script>
-    <script src="./js/login.js"></script>
-</body>
+
+    <script src="../../utils/cache-util.js"></script>
+    <script src="../../js/login.js"></script></body>
 </html>
