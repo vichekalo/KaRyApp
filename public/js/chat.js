@@ -62,6 +62,8 @@ const getContactMessage = value => {
     }
 
     return contactMessageWrapperClone
+    // play sound
+    getsound.play();
 }
 
 // get own message
