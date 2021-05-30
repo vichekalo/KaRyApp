@@ -24,8 +24,8 @@ async function login () {
 //we need to wait 2,3s , and the waiting not specific
     try {
         // request data from API 
-        const { data } = await axios.post(LOGIN_URL, payload)
-        setCachedUser(data)
+        const data  = await axios.post(LOGIN_URL, payload)
+        setCachedUser(data.data)
         window.location.href = "/view/chat"
     } catch (err) {
         alert('Incorrect username and password')
@@ -52,8 +52,8 @@ async function register () {
     }
 
     try {
-        const { data } = await axios.post(REGISTER_URL, payload)
-        //consol.log(data.data)
+        // {data}=data.data
+        const {data} = await axios.post(REGISTER_URL, payload)
         setCachedUser(data)
         window.location.href = "/view/chat"
     } catch (err) {

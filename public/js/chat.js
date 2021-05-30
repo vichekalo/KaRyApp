@@ -102,11 +102,8 @@ setInterval(async () => {
 // get all message
 async function getMessage(isScroll = true) {
     const { data } = await axios.get(MESSAGE_URL)
-
     const chatDashboard = document.getElementById('chat-dashboard')
-
     if (chatWrapper) chatWrapper.removeChild(chatDashboard)
-
     const chatElement = document.createElement('span')
     chatElement.setAttribute('id', 'chat-dashboard')
     data.forEach(item => {
@@ -117,19 +114,14 @@ async function getMessage(isScroll = true) {
         }
     });
     chatWrapper.appendChild(chatElement)
-
     if (isScroll) chatWrapper.scrollTop = 9999999999
 }
-
 getMessage()
-
 // send message
 async function sendMessage () {
     // play sound
     getsound.play();
-    if (userTxt.value.trim()) {
-        
-
+    if (userTxt.value.trim()) {    
         const payload = {
             msg: userTxt.value,
             user_id: cache.data.id,
