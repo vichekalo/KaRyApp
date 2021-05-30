@@ -132,7 +132,7 @@ async function sendMessage () {
             user_id: cache.data.id,
             isBold: isBold,
             isItalic: isItalic,
-            getTime: getTime
+            // getTime: getTime
         }
 
         try {
