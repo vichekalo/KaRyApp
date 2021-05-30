@@ -130,8 +130,7 @@ getMessage()
 
 // send message
 async function sendMessage () {
-    // play sound
-    getsound.play();
+   
     if (userTxt.value.trim()) {
         
 
@@ -155,6 +154,8 @@ async function sendMessage () {
         emojiWrapper.className = 'emojis-wrapper'
         emojiIcon.style.color = '#a4b0be' 
     }
+    // play sound
+    getsound.play();
 }
 
 // emoji
