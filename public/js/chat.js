@@ -36,6 +36,11 @@ profile.className = 'message-profile'
 // sound
 let getsound = document.querySelector(".myAudio")
 
+// time
+// let clock = new Date();
+// let setTime = clock.getHours() + ":" + clock.getMinutes();
+
+
 // get contact message
 const getContactMessage = value => {
     let contactMessageWrapperClone = contactMessageWrapper.cloneNode(true)
@@ -126,7 +131,8 @@ async function sendMessage () {
             msg: userTxt.value,
             user_id: cache.data.id,
             isBold: isBold,
-            isItalic: isItalic
+            isItalic: isItalic,
+            getTime: getTime
         }
 
         try {
@@ -219,4 +225,5 @@ function setItalicLetter () {
     }  
 }
 
+// date and time
 
